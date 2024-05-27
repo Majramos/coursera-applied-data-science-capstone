@@ -1,0 +1,57 @@
+<mxfile host="app.diagrams.net" modified="2024-05-27T18:05:55.966Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="VbJS6gYvmycCWoygJIWt" version="24.4.9" type="device">
+  <diagram name="Page-1" id="GQ0kj2YBBfEznGpIxxNn">
+    <mxGraphModel dx="1674" dy="756" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="8iXjHYZFnUyKZ5IibE8D-12" value="GET Request" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8iXjHYZFnUyKZ5IibE8D-10" target="8iXjHYZFnUyKZ5IibE8D-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8iXjHYZFnUyKZ5IibE8D-10" value="Endpoint&lt;div&gt;https://en.wikipedia.org/w/index.php?title=List_of_Falcon_9_and_Falcon_Heavy_launches&amp;amp;oldid=1027686922&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="170" width="620" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8iXjHYZFnUyKZ5IibE8D-16" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;Status code == 200&lt;/span&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8iXjHYZFnUyKZ5IibE8D-11" target="8iXjHYZFnUyKZ5IibE8D-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8iXjHYZFnUyKZ5IibE8D-18" value="Status code != 200" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8iXjHYZFnUyKZ5IibE8D-11" target="8iXjHYZFnUyKZ5IibE8D-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8iXjHYZFnUyKZ5IibE8D-11" value="Response Status Code" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="382" y="250" width="176" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8iXjHYZFnUyKZ5IibE8D-63" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8iXjHYZFnUyKZ5IibE8D-15" target="8iXjHYZFnUyKZ5IibE8D-62">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8iXjHYZFnUyKZ5IibE8D-15" value="Decode text response content with BeautifulSoup" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="280" y="330" width="380" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8iXjHYZFnUyKZ5IibE8D-17" value="Try again" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="250" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8iXjHYZFnUyKZ5IibE8D-66" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8iXjHYZFnUyKZ5IibE8D-62" target="8iXjHYZFnUyKZ5IibE8D-65">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8iXjHYZFnUyKZ5IibE8D-62" value="Find all tables in endpooint&lt;div&gt;&quot;.find_all(&#39;table&#39;)&quot;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="360" y="380" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8iXjHYZFnUyKZ5IibE8D-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="8iXjHYZFnUyKZ5IibE8D-65" target="8iXjHYZFnUyKZ5IibE8D-67">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8iXjHYZFnUyKZ5IibE8D-65" value="Select target table" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="410" y="440" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8iXjHYZFnUyKZ5IibE8D-74" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8iXjHYZFnUyKZ5IibE8D-67" target="8iXjHYZFnUyKZ5IibE8D-73">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8iXjHYZFnUyKZ5IibE8D-67" value="Loop trough each row, extract required info and append to a target dictionary" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="245" y="490" width="450" height="35.5" as="geometry" />
+        </mxCell>
+        <mxCell id="8iXjHYZFnUyKZ5IibE8D-73" value="Convert dictionary to a Pandas dataframe" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="330" y="548" width="280" height="36.75" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
